@@ -14,6 +14,7 @@ public class Deck {
     }
 
     public void buildDeck() {
+        this.cards.clear();
         for (SuitType suit : SuitType.values()) {
             for (RankType rank : RankType.values()) {
                 this.cards.add(new Card(suit, rank));
